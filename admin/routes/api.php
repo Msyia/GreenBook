@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('users/{id}/no_hp', function ($id) {
+    $user = \App\Models\User::findOrFail($id);
+    return response()->json(['no_hp' => $user->no_hp]);
+});
+
