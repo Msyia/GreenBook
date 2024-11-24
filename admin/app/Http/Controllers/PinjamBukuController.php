@@ -161,7 +161,7 @@ public function update(Request $request, $id)
         'denda' => $this->calculateDenda($request->tgl_pinjam, $request->tgl_kembali),
     ]);
 
-    return redirect()->route('pinjam_buku.index')->with('success', 'Data berhasil diperbarui.');
+    return redirect()->route('pinjam_buku.index')->with('success', 'Data pengajuan berhasil diperbarui.');
 }
 
 private function calculateDenda($tglPinjam, $tglKembali)
@@ -183,7 +183,7 @@ public function destroy($id)
     // Jika data ditemukan, hapus
     if ($pinjamBuku) {
         $pinjamBuku->delete();
-        return redirect()->route('pinjam_buku.index')->with('success', 'Data berhasil dihapus!');
+        return redirect()->route('pinjam_buku.index')->with('success', 'Data peminjaman berhasil dihapus!');
     }
 
     // Jika data tidak ditemukan

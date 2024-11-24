@@ -98,7 +98,7 @@ class BukuController extends Controller
             'deskripsi' => $request->deskripsi,
         ]);
 
-        return redirect()->route('buku.index')->with('success', 'Buku berhasil diperbarui!');
+        return redirect()->route('buku.index')->with('success', 'Data buku berhasil diperbarui.');
     }
     public function destroy($id)
     {

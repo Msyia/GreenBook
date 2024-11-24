@@ -3,6 +3,11 @@
 <div class="content">
     <div class="container mt-5" style="font-size: 12px;">
         <h3 class="text-center mb-4">Tabel Daftar Buku</h3>
+        @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
         <div class="table-container">
             <div class="mb-4">
                 <button class="btn btn-insert text-light float-end" style="background-color: #8300EB; margin-bottom: 20px;">

@@ -95,14 +95,21 @@
     <h3 class="text-center"><a href="{{'welcome'}}">Dashboard</a></h3>
     <hr>
     <ul class="list-unstyled">
-      <li><a href="#">Tabel User</a></li>
+      <li><a href="{{ ('users') }}">Tabel User</a></li>
       <li><a href="{{ ('buku')}}">Tabel Daftar Buku</a></li>
       <li><a href="{{ ('pinjam_buku')}}">Tabel Pinjam Buku</a></li>
       <li><a href="{{ ('pengajuan') }}">Tabel Pengajuan Peminjaman</a></li>
-      <li><a href="#">Feedback</a></li>
+      <li><a href="{{('feedback')}}">Feedback</a></li>
     </ul>
     <hr>
     <ul class="list-unstyled">
-      <li><a href="#">Logout</a></li>
+      <li><a href="{{ route('admin.logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+        Logout
+    </a>
+    <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
+        @csrf
+    </form>
+    
+    </li>
     </ul>
   </div>
