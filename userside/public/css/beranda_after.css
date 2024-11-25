@@ -1,0 +1,250 @@
+body{
+    background-color: #E9F3E9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada navbar */
+    border-bottom: 2px solid #ddd; /* Memberi garis bawah pada navbar */
+}
+
+#profile img {
+  width: 40px; /* Ukuran lebar gambar */
+  height: 40px; /* Ukuran tinggi gambar */
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  object-fit: cover; /* Menyesuaikan gambar dalam lingkaran */
+}
+
+/* Full-width background styling for search bar section */
+.search-container {
+    background-image: url("{{ asset('images/beranda.png') }}");
+
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(-50vw + 50%);
+}
+
+/* Styling for the search bar */
+.search-bar {
+    width: 600px;
+}
+
+/* Styling for search icon button */
+.search-icon-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-left: 1px solid #ddd;
+}
+
+.daftar-buku-section {
+    background-color: #E9F3E9;
+    padding: 40px 80px;
+    text-align: center;
+}
+
+.daftar-buku-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px;
+}
+
+.book-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 210px;
+    flex: 0 0 auto;
+    padding-top: 5px;
+}
+
+.book-card img {
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    object-fit:cover;
+
+}
+
+.book-title {
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter */
+    font-size: 16px; /* Ukuran font 16px */
+    font-weight: 600; /* Gaya semi-bold */
+    line-height: 140%; /* Jarak antar garis 140% */
+    color: #1E1E1E; /* Warna teks (opsional, bisa disesuaikan) */
+    text-align: left; /* Posisi teks rata kiri */
+    margin: 5px 0; /* Jarak atas dan bawah teks */
+    margin-top: -12px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+.book-author {
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter dengan gaya reguler */
+    font-size: 16px; /* Ukuran font 16px */
+    font-weight: 400; /* Gaya reguler */
+    line-height: 140%; /* Jarak antar garis 140% */
+    color: #1E1E1E; /* Warna teks merah */
+    text-align: left; /* Posisi teks rata kiri */
+    margin-left:10px;  /* Jarak atas dan bawah teks */
+    margin-top: 0px;
+}
+
+.daftar-buku-title {
+    font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+    font-size: 32px; /* Ukuran font 32px */
+    font-weight: 600; /* Gaya semi-bold */
+    line-height: 1.4; /* Jarak antar garis 140% dari ukuran font */
+    letter-spacing: 0.5px; /* Jarak antar huruf */
+    color: #000000; /* Warna teks hitam */
+    text-align: center; /* Posisi teks di tengah (opsional) */
+    margin: 20px 0; /* Jarak atas dan bawah (opsional) */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display:contents;
+}
+
+
+/*FAQ*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+.faq-title {
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter */
+    font-size: 24px; /* Ukuran font 24px */
+    font-weight: 600; /* Gaya semi-bold */
+    line-height: 120%; /* Jarak antar garis 120% */
+    letter-spacing: -0.02em; /* Letter spacing -2% (dalam satuan em) */
+    color: #1E1E1E; /* Warna teks abu gelap */
+    text-align: center; /* Posisi teks di tengah */
+    margin: 20px 0; /* Jarak atas dan bawah (opsional) */
+}
+
+.faq-text {
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter */
+    font-size: 16px; /* Ukuran font 16px */
+    font-weight: 400; /* Gaya reguler */
+    line-height: 150%; /* Jarak antar garis 150% */
+    color: #757575; /* Warna abu-abu */
+    text-align: center; /* Posisi teks di tengah (opsional) */
+    margin-top: -10px;
+}
+
+.faq-section {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 100px;
+    margin-top: 10px;
+}
+.accordion-button {
+    background-color: #ffffff !important; /* Latar belakang putih */
+    color: #1E1B1B; /* Warna teks abu gelap */
+    font-family: 'Inter', sans-serif; /* Font Inter */
+    font-size: 16px; /* Ukuran font 16px */
+    font-weight: 600; /* Gaya semi-bold */
+    line-height: 140%; /* Jarak antar garis 140% */
+    fill: #1E1B1B; /* Warna fill untuk ikon SVG atau elemen vektor */
+    border: 1px solid transparent; /* Tambahkan batas jika diperlukan */
+    border-radius: 5px; /* Sudut tombol melengkung (opsional) */
+    padding: 10px 20px; /* Spasi dalam elemen */
+    cursor: pointer; /* Menunjukkan tombol dapat diklik */
+    text-align: left; /* Teks diratakan ke kiri */
+    transition: all 0.3s ease-in-out; /* Animasi transisi */
+}
+
+.accordion-button:hover {
+    background-color: #1E1B1B; /* Latar belakang merah saat hover */
+     /* Warna teks putih saat hover */
+    fill: #ffffff; /* Warna fill ikon berubah putih saat hover */
+}
+
+
+/*penerbit*/
+
+.penerbit-title {
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter */
+    font-size: 40px; /* Ukuran font 40px */
+    font-weight: 600; /* Gaya semi-bold */
+    line-height: 140%; /* Jarak antar garis 140% */
+    color: #000000; /* Warna teks hitam */
+    text-align: left; /* Teks rata kiri */
+    margin-bottom: 30px; /* Jarak bawah dengan elemen lainnya */
+}
+
+
+.penerbit-section {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center; /* Memusatkan elemen secara horizontal */
+    justify-content: center; /* Memusatkan elemen secara vertikal */
+    height: 100vh; /* Membuat div memenuhi tinggi viewport */
+    text-align: center;
+}
+.penerbit-section img{
+    width: 80%;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #6A9C89;
+    color: white;
+}
+
+
+.social-icons a {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    color: #747474;
+}
+
+/* Form Styling */
+.form-control {
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.btn-dark {
+    background-color: #333;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #555;
+}
+.footer-bottom {
+    background-color: #184841;
+    color: white;
+    font-size: 0.9em;
+}

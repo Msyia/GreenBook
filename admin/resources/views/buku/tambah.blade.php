@@ -15,7 +15,7 @@
         @endif
 
         <!-- Form Tambah Buku -->
-        <form action="{{ route('buku.store') }}" method="post" enctype="multipart/form-data" class="bg-light p-4 rounded shadow-sm">
+        <form action="{{ route('buku.store') }}" method="post" enctype="multipart/form-data">
             @csrf
 
             <div class="mb-3">
@@ -68,8 +68,9 @@
                 <input type="file" class="form-control" id="gambar" name="gambar" accept="image/*" required>
             </div>
 
-            <div class="text-center">
+            <div class="text-start">
                 <button type="submit" class="btn btn-primary">Simpan</button>
+                <a href="{{ route('buku.index') }}" class="btn btn-secondary">Batal</a>
             </div>
         </form>
     </div>

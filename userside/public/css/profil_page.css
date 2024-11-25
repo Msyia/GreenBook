@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #D7E1D7 !important;
+    
+    max-height: 1000px;
+  }
+  
+  .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada navbar */
+    border-bottom: 2px solid #ddd; /* Memberi garis bawah pada navbar */
+}
+
+#profile img {
+  width: 40px; /* Ukuran lebar gambar */
+  height: 40px; /* Ukuran tinggi gambar */
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  object-fit: cover; /* Menyesuaikan gambar dalam lingkaran */
+}
+
+
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #FCFAEE !important;
+    
+}
+
+.sidebar .nav-link {
+    font-size: 16px;
+}
+
+.sidebar .btn {
+    font-size: 16px;
+}
+
+.profile-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Semi Bold */
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    position: relative; /* Dibutuhkan untuk efek garis */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+  }
+  hr {
+    margin-left: 0px;
+    height: 1px;
+    background-color: #000000 !important;
+    border: none;
+    box-shadow: none; /* Menghapus efek bayangan */
+}
+
+ 
+  
+  .profile-title::after {
+    content: "";
+    position: absolute;
+    
+    left: 0;
+    width: 250px; /* Panjang garis mengikuti teks */
+    height: 4px; /* Ketebalan garis */
+    margin-left: -5px;
+  }
+  
+/* Atur font dan ikon */
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Medium */
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    display: flex; /* Agar ikon dan teks sejajar */
+    align-items: center; /* Vertikal sejajar */
+}
+
+/* Menebalkan ikon */
+.icon-bold {
+    font-size: 20px; /* Sesuaikan ukuran ikon */
+    font-weight: 700 !important; /* Menambah ketebalan ikon */
+    margin-right: 8px; /* Jarak ikon ke teks */
+}
+
+
+
+/***?  Content***/
+/* Card Styles */
+.card {
+    border-radius: 8px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    
+}
+
+.back-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 550; /* Semi Bold */
+    font-size: 16px;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    display: flex; /* Membuat panah dan teks sejajar */
+    align-items: center;
+    padding: 0; /* Menghapus padding default */
+    border: none; /* Menghapus border default */
+    background: none; /* Menghapus background default */
+    cursor: pointer; /* Efek pointer untuk tombol */
+    margin-left: -85px;
+    padding-left: px;
+}
+
+
+
+
+
+
+
+
+
+.arrow {
+    margin-right: 15px; /* Jarak antara panah dan teks */
+}
+
+.profile-pic img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #dee2e6;
+}
+
+.user-info {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi Bold */
+    font-size: 15px; /* Ukuran font */
+    line-height: 24px; /* Jarak antar baris */
+    letter-spacing: 0.5px; /* Spasi antar huruf */
+    color: #534848; /* Warna teks */
+}
+
+
+.form-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi Bold */
+    font-size: 16px;
+    line-height: 24px; /* Menyesuaikan tinggi baris */
+    letter-spacing: 0.5px;
+    text-align: left; /* Meratakan teks ke kiri */
+    display: block; /* Pastikan label berada dalam baris tersendiri */
+    padding-left: 40px;
+    margin-left: -35px;
+    margin-bottom: 10px;
+}
+
+#userName {
+    font-family: 'Inter', sans-serif;
+    font-weight: 550; /* Semi Bold */
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #534848; /* Warna teks */
+    text-align: left; /* Posisi teks ke kiri */
+    border: 1px solid #cbcbcb; /* Tebalkan border */
+    border-radius: 5px; /* Membulatkan sudut border */
+    padding: 10px; /* Memberikan jarak teks dari border */
+    background-color: #f9f9f9; /* Warna latar belakang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan lembut */
+}
+
+#profileForm input[type="text"],
+#profileForm input[type="email"] {
+    font-family: 'Inter', sans-serif;
+    font-weight: 550; /* Semi Bold */
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #534848; /* Warna teks */
+    text-align: left; /* Posisi teks ke kiri */
+    border: 1px solid #cbcbcb; /* Tebalkan border */
+    border-radius: 5px; /* Membulatkan sudut border */
+    padding: 10px; /* Memberikan jarak teks dari border */
+    background-color: #f9f9f9; /* Warna latar belakang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan lembut */
+}
+
+.btn.btn-dark {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200; /* Regular */
+    font-size: 14px; /* Ukuran font lebih kecil */
+    line-height: 100%; /* 100% dari ukuran font */
+    color: #F5F5F5; /* Warna teks */
+    background-color: #000; /* Warna latar belakang tombol */
+    border: none; /* Menghilangkan border default */
+    padding: 18px 8px; /* Jarak dalam tombol lebih kecil */
+    border-radius: 5px; /* Membuat sudut tombol membulat */
+    text-align: center; /* Memastikan teks di tengah */
+    cursor: pointer; /* Ubah kursor menjadi pointer saat hover */
+    transition: background-color 0.3s ease; /* Animasi efek hover */
+    max-width: 120px; /* Membatasi lebar maksimal tombol */
+    margin: 0 auto; /* Membuat tombol tetap terpusat */
+    margin-top: 40px;
+}
+
+
+.btn.btn-dark:hover {
+    background-color: #333; /* Warna latar saat hover */
+}
+
+footer {
+    background-color: #16423C; /* Warna latar belakang footer */
+    color: #ffffff; /* Warna teks di footer */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    padding: 15px ; /* Memberikan ruang vertikal pada footer */
+    font-size: 14px; /* Ukuran font teks */
+    font-family: Arial, sans-serif; /* Jenis font yang lebih sederhana dan profesional */
+    position: relative; /* Mengatur posisi footer agar bisa diletakkan di bagian bawah */
+    bottom: 0; /* Menempatkan footer di bawah halaman */
+    width: 100%; /* Mengatur footer agar memenuhi lebar halaman */
+    
+    height: 40px;
+  }

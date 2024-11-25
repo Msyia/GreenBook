@@ -8,6 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\AdminAuthController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -85,6 +86,8 @@ Route::post('/admin/logout', [AdminAuthController::class, 'logout'])->name('admi
 Route::get('/welcome', function () {
     return view('welcome');
 })->middleware('check.admin')->name('welcome');
+
+
 
 
 ?>

@@ -1,0 +1,152 @@
+body {
+   
+    background-color: #E5EEE5!important;
+  
+  /* Warna latar belakang halaman */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font default untuk seluruh halaman */
+  margin: 0; /* Menghapus margin bawaan browser */
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk navbar */
+  border-bottom: 2px solid #ddd; /* Garis bawah pada navbar */
+  height: 60px; /* Tinggi navbar */
+  display: flex; /* Mengatur tata letak fleksibel untuk elemen dalam navbar */
+  align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+  padding: 0 20px; /* Menambahkan jarak horizontal di dalam navbar */
+}
+
+.content {
+  display: flex; /* Tata letak fleksibel untuk konten */
+  justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+  align-items: center; /* Menempatkan konten di tengah secara vertikal */
+  /* height: calc(100vh - 60px); Tinggi penuh viewport dikurangi tinggi navbar */
+  padding: 20px; /* Jarak dalam konten */
+  height: 100px;
+}
+
+.search-bar {
+  display: flex; /* Membuat elemen di dalamnya fleksibel */
+  align-items: center; /* Menyelaraskan elemen di tengah secara vertikal */
+  gap: 10px; /* Jarak antar elemen dalam search bar */
+  background-color: #FFFFFF; /* Warna latar belakang search bar */
+  border: 1px solid #ccc; /* Garis tepi abu-abu */
+  border-radius: 8px; /* Sudut melengkung */
+  padding: 10px; /* Ruang di dalam search bar */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan pada search bar */
+  width: 700px; /* Lebar search bar */
+  height: 60px;
+  padding-top: 5px; 
+ margin-top: 30px;
+}
+
+.search-bar input {
+  border: none; /* Menghapus garis tepi input */
+  outline: none; /* Menghapus garis fokus default */
+  flex-grow: 1; /* Membuat input memenuhi sisa ruang */
+  font-size: 14px; /* Ukuran font dalam input */
+  background-color: transparent; /* Latar belakang transparan */
+}
+
+.search-bar button {
+  background: none; /* Tidak ada latar belakang pada tombol */
+  border: none; /* Menghapus garis tepi tombol */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat dihover */
+  display: flex; /* Menyelaraskan konten di dalam tombol */
+  align-items: center; /* Menyelaraskan ikon secara vertikal */
+  justify-content: center; /* Menempatkan ikon di tengah */
+}
+
+.search-bar svg {
+  width: 16px; /* Lebar ikon pencarian */
+  height: 16px; /* Tinggi ikon pencarian */
+  fill: black; /* Warna ikon pencarian */
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut pada kartu */
+  border: none; /* Menghapus garis tepi kartu */
+  border-radius: 5px; /* Membuat sudut kartu melengkung */
+  width: 250px; /* Lebar kartu */
+  margin-top: 50px;
+}
+
+.card img {
+  /* object-fit: cover; Menyesuaikan gambar agar tetap proporsional */
+  height: 280px; /* Tinggi gambar tetap */
+  padding: 10px; /* Menambahkan jarak di sekitar gambar */
+}
+
+.book-title {
+  font-weight: bold; /* Teks judul lebih tebal */
+  font-size: 16px; /* Ukuran font judul */
+  margin: 5px 0; /* Jarak vertikal antara elemen */
+}
+
+.book-author {
+  font-size: 14px; /* Ukuran font penulis buku */
+  color: #555; /* Warna teks yang lebih lembut */
+}
+
+.book-author {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400; /* Regular weight */
+  line-height: 140%;
+  text-align: left; /* Mengatur teks rata kiri */
+  margin-top: -20px;
+  margin-left: -5px;
+
+}
+
+.book-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600; /* Semi-bold weight */
+  line-height: 140%;
+  text-align: left; /* Rata kiri */
+  margin-left: -3px;
+  margin-top: -10px;/* Opsional, untuk menghilangkan margin default */
+}
+
+
+#detail {
+  background-color: #02383C;  /* Warna latar belakang tombol */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #F5F5F5;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 220px;
+}
+
+.detail-btn:hover {
+  background-color: #00bcd4;  /* Warna saat tombol dihover */
+}
+
+
+
+
+/*footer*/
+footer {
+  background-color: #16423C; /* Warna latar belakang footer */
+  color: #ffffff; /* Warna teks di footer */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  padding: 15px ; /* Memberikan ruang vertikal pada footer */
+  font-size: 14px; /* Ukuran font teks */
+  font-family: Arial, sans-serif; /* Jenis font yang lebih sederhana dan profesional */
+  position: relative; /* Mengatur posisi footer agar bisa diletakkan di bagian bawah */
+  bottom: 0; /* Menempatkan footer di bawah halaman */
+  width: 100%; /* Mengatur footer agar memenuhi lebar halaman */
+  margin-top: 30px;
+  height: 40px;
+}
+
+
+
+

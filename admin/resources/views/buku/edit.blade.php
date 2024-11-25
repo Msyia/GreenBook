@@ -3,7 +3,7 @@
 <div class="content">
 <div class="container mt-5">
     <h3 class="text-center mb-4">Edit Data Buku</h3>
-    <form action="{{ route('buku.update', $buku->id_buku) }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('buku.update', $buku->id_buku) }}" method="post" enctype="multipart/form-data" >
         @csrf
         @method('PUT')
 

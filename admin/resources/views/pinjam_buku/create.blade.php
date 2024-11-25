@@ -1,6 +1,7 @@
 @include('templates.sidebar')
 
 <div class="content">
+<h1 class="text-center mb-4" >Tambah Data Peminjaman Buku</h1>
     <form action="{{ route('pinjam_buku.store') }}" method="POST">
         @csrf
         <div class="form-group">
@@ -31,7 +32,8 @@
             <input type="date" name="tgl_kembali" id="tgl_kembali" class="form-control" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Tambah Peminjaman</button>
+        <button type="submit" class="btn btn-primary mt-2">Simpan</button>
+        <a href="{{ route('pinjam_buku.index') }}" class="btn btn-secondary mt-2">Batal</a>
     </form>
 </div>
 </div>

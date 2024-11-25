@@ -1,8 +1,8 @@
 @include('templates.sidebar')
 
 <div class="content">
-<div class="container">
-    <h1>Tambah Data Pengajuan</h1>
+<div class="container mt-5">
+<h1 class="text-center mb-4">Tambah Data Pengajuan</h1>
     <form action="{{ route('pengajuan.store') }}" method="POST">
         @csrf
         <div class="mb-3">
@@ -39,6 +39,7 @@
 
         <div class="mb-3">
             <button type="submit" class="btn btn-primary">Simpan</button>
+            <a href="{{ route('pengajuan.index') }}" class="btn btn-secondary">Batal</a>
         </div>
     </form>
 </div>
@@ -55,5 +56,6 @@
         document.getElementById('penerbit').value = penerbit || '';
     }
 </script>
+</div>
 
-    @include('templates.footer')
+@include('templates.footer')
