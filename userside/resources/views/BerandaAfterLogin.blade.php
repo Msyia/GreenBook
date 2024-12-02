@@ -33,9 +33,9 @@
                     <a class="nav-link" href="faq.html">FAQ</a>
                 </div>
                 <div class="d-flex  ms-auto" id="profile">
-                    <span class="username me-3 mt-2">Salma</span>
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" style="background-color:none;">
-                        <img src="{{ asset('images/beranda.png') }}" alt="User" />
+                    <!-- <span class="username me-3 mt-2">Salma</span> -->
+                    <a href="{{('profile')}}"><button class="btn" type="button" data-bs-toggle="offcanvas" style="background-color:none;">
+                        <img src="{{ asset('images/beranda.png') }}" alt="User" /></a>
                 </div>
             </div>
         </div>

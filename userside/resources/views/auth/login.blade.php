@@ -36,7 +36,7 @@
             <p>Don't have an account? <a href="{{ route('register') }}" class="register-link">Register</a></p>
         </div>
         <div class="image-container">
-            <img src="{{ asset('image/LOGIN.png') }}" alt="Login Illustration">
+            <img src="{{ asset('images/LOGIN.png') }}" alt="Login Illustration">
         </div>
     </div>
     <footer>

@@ -115,10 +115,10 @@ a:hover {
 }
 
 .image-container {
-    width: 50%;
+    width: 100%;
     background-color: #d3d3d3;
     display: flex;
-    align-items: center;
+    align-items:safe;
     justify-content: center;
 }
 

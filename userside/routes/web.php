@@ -50,3 +50,12 @@ Route::post('register', [RegisterController::class, 'store']);
 Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
+
+//LOGOUT
+Route::post('/logout', function () {
+    Auth::logout(); // 
+    request()->session()->invalidate(); 
+    request()->session()->regenerateToken(); 
+
+    return redirect('/login');
+})->name('logout');

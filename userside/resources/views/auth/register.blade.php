@@ -49,14 +49,14 @@
                     <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required>
                 </div>
     
-                <a href="#" class="forgot-password">Forgot your password</a>
+                <a href="" class="forgot-password">Forgot your password</a>
                 <button type="submit" class="form-button">Register</button>
             </form>
-            <p>Already have an account? <a href="#" class="register-link">Sign In</a></p>
+            <p>Already have an account? <a href="{{('login')}}" class="register-link">Sign In</a></p>
         </div>
         <!-- Image Container -->
         <div class="image-container">
-            <img src="bookshelf.jpg" alt="Bookshelf Illustration">
+            <img src="{{asset('images/REGISTER.png')}}" alt="Bookshelf Illustration">
         </div>
     </div>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">

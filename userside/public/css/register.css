@@ -151,14 +151,14 @@ p {
     align-items: center; /* Elemen di dalamnya diratakan ke tengah secara vertikal */
     justify-content: center; /* Elemen di dalamnya diratakan ke tengah secara horizontal */
     background-color: #D3D3D3; 
-    padding: 20px;
+    padding: 10px;
     flex-basis: 48%;/* Warna latar belakang abu-abu terang */
 }
 
 
 /* Gambar di dalam container */
 .image-container img {
-    width: 80%; /* Gambar memenuhi 80% lebar container */
+    width:100%; /* Gambar memenuhi 80% lebar container */
     height: auto; /* Tinggi menyesuaikan proporsi lebar */
     border-radius: 5px; /* Sudut gambar dibulatkan */
     object-fit: cover; /* Gambar menyesuaikan ukuran tanpa merusak proporsi */
